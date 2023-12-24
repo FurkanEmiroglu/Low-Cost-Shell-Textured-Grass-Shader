@@ -2,7 +2,7 @@
   "author": "Furkan Emiroglu",
   "name": "com.femiroglu.shelltexturedgrass",
   "displayName": "Shell Textured Grass Shader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "unity": "2021.3",
   "description": "Shell Textured Grass Implementation in Unity. Tested on Unity 2021.3",
   "repository": {
