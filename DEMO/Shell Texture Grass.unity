@@ -285,14 +285,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 163948601}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f893857ed3cab433ab1c6830abfdc8ca, type: 3}
+  m_Script: {fileID: 11500000, guid: bb5da28c424fd4908ab3e83f40cf5145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
   propertyName: _Density
   slider: {fileID: 1938807305}
   minValue: 0
-  maxValue: 750
+  maxValue: 2000
 --- !u!1 &255138498
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 289919815}
   - component: {fileID: 289919818}
   - component: {fileID: 289919817}
-  - component: {fileID: 289919816}
+  - component: {fileID: 289919819}
   m_Layer: 5
   m_Name: PropertyBG (6)
   m_TagString: Untagged
@@ -425,23 +425,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 270, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &289919816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 289919814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f893857ed3cab433ab1c6830abfdc8ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
-  propertyName: _TopColorMultiplier
-  slider: {fileID: 596352340}
-  minValue: 0
-  maxValue: 2
 --- !u!114 &289919817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,6 +463,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289919814}
   m_CullTransparentMesh: 1
+--- !u!114 &289919819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289919814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5da28c424fd4908ab3e83f40cf5145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
+  propertyName: _TopColorMultiplier
+  slider: {fileID: 596352340}
+  minValue: 0
+  maxValue: 1
 --- !u!1001 &307142348
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -516,7 +516,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onColorChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 307142351}
+      objectReference: {fileID: 0}
     - target: {fileID: 2130943084915617136, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
       propertyPath: onColorChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -666,7 +666,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 307142348}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &307142351
+--- !u!114 &307142355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -675,11 +675,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 307142350}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5663a947d7bd47fda4350adf649a039a, type: 3}
+  m_Script: {fileID: 11500000, guid: b7f794d91097a4c518c7d380e25d4941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
-  propertyName: _CrossColor
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
+  propertyName: _TopColor
 --- !u!1 &328711966
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +966,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onColorChange.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 369194983}
+      objectReference: {fileID: 369194987}
     - target: {fileID: 2130943084915617136, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
       propertyPath: onColorChange.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -980,7 +980,7 @@ PrefabInstance:
     - target: {fileID: 2130943084915617136, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
       propertyPath: onColorChange.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MaterialPropertyColorBind, ShellTexturePackage
+      value: ShellTexturedGrass.MaterialPropertyColorBind, ShellTexturedGrass
       objectReference: {fileID: 0}
     - target: {fileID: 2130943084915617136, guid: 4214b57e615806c448ba9d993d629531,
         type: 3}
@@ -1116,7 +1116,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 369194980}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &369194983
+--- !u!114 &369194987
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1125,10 +1125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 369194982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5663a947d7bd47fda4350adf649a039a, type: 3}
+  m_Script: {fileID: 11500000, guid: b7f794d91097a4c518c7d380e25d4941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
   propertyName: _ShellColor
 --- !u!1 &379842593
 GameObject:
@@ -1171,14 +1171,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 379842593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cbe8230a81a34c4cb80e0903dc3902e, type: 3}
+  m_Script: {fileID: 11500000, guid: ff94b41fbdb024851949eb98543e4f15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
-  mesh: {fileID: -462981019419857548, guid: 3e78b78aded3247098b8908d9e473928, type: 3}
+  shellType: 0
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
+  mesh: {fileID: -462981019419857548, guid: 591af230be22044b8b395537d907240a, type: 3}
   count: 96
-  distance: 0.0005
-  rotation: {x: 0, y: 90, z: 0}
+  diff: 0.0005
+  rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &402048191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,14 +1948,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 644382618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f893857ed3cab433ab1c6830abfdc8ca, type: 3}
+  m_Script: {fileID: 11500000, guid: bb5da28c424fd4908ab3e83f40cf5145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
   propertyName: _Attenuation
   slider: {fileID: 1289766633}
   minValue: 0
-  maxValue: 15
+  maxValue: 5
 --- !u!1 &827757263
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,7 +2925,7 @@ GameObject:
   - component: {fileID: 1231812209}
   - component: {fileID: 1231812212}
   - component: {fileID: 1231812211}
-  - component: {fileID: 1231812210}
+  - component: {fileID: 1231812213}
   m_Layer: 5
   m_Name: PropertyBG (6)
   m_TagString: Untagged
@@ -2954,23 +2955,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 270, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1231812210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1231812208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f893857ed3cab433ab1c6830abfdc8ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
-  propertyName: _HeightmapMultiplier
-  slider: {fileID: 1739250390}
-  minValue: 0
-  maxValue: 0.2
 --- !u!114 &1231812211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3009,6 +2993,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231812208}
   m_CullTransparentMesh: 1
+--- !u!114 &1231812213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231812208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5da28c424fd4908ab3e83f40cf5145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
+  propertyName: _HeightmapMultiplier
+  slider: {fileID: 1739250390}
+  minValue: 0
+  maxValue: 1
 --- !u!1 &1233779734
 GameObject:
   m_ObjectHideFlags: 0
@@ -3261,7 +3262,7 @@ GameObject:
   - component: {fileID: 1363036975}
   - component: {fileID: 1363036978}
   - component: {fileID: 1363036977}
-  - component: {fileID: 1363036976}
+  - component: {fileID: 1363036979}
   m_Layer: 5
   m_Name: PropertyBG (5)
   m_TagString: Untagged
@@ -3291,23 +3292,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 270, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1363036976
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363036974}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f893857ed3cab433ab1c6830abfdc8ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
-  propertyName: _WindFrequency
-  slider: {fileID: 409862969}
-  minValue: 0.01
-  maxValue: 1.2
 --- !u!114 &1363036977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3346,6 +3330,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363036974}
   m_CullTransparentMesh: 1
+--- !u!114 &1363036979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363036974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5da28c424fd4908ab3e83f40cf5145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
+  propertyName: _WindFrequency
+  slider: {fileID: 409862969}
+  minValue: 0
+  maxValue: 0.3
 --- !u!1 &1395997909
 GameObject:
   m_ObjectHideFlags: 0
@@ -4136,7 +4137,7 @@ GameObject:
   - component: {fileID: 1580941178}
   - component: {fileID: 1580941181}
   - component: {fileID: 1580941180}
-  - component: {fileID: 1580941179}
+  - component: {fileID: 1580941182}
   m_Layer: 5
   m_Name: PropertyBG (3)
   m_TagString: Untagged
@@ -4166,23 +4167,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 270, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1580941179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1580941177}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f893857ed3cab433ab1c6830abfdc8ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
-  propertyName: _MaxHeight
-  slider: {fileID: 1891799381}
-  minValue: 0
-  maxValue: 250
 --- !u!114 &1580941180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4221,6 +4205,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580941177}
   m_CullTransparentMesh: 1
+--- !u!114 &1580941182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580941177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5da28c424fd4908ab3e83f40cf5145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
+  propertyName: _MaxHeight
+  slider: {fileID: 1891799381}
+  minValue: 50
+  maxValue: 250
 --- !u!1 &1584553283
 GameObject:
   m_ObjectHideFlags: 0
@@ -4656,7 +4657,7 @@ GameObject:
   - component: {fileID: 1631243023}
   - component: {fileID: 1631243026}
   - component: {fileID: 1631243025}
-  - component: {fileID: 1631243024}
+  - component: {fileID: 1631243027}
   m_Layer: 5
   m_Name: PropertyBG (4)
   m_TagString: Untagged
@@ -4686,23 +4687,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 270, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1631243024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631243022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f893857ed3cab433ab1c6830abfdc8ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: {fileID: 2100000, guid: f5835a500b6804f98a7810d2e4bf0b5d, type: 2}
-  propertyName: _WindAmplitude
-  slider: {fileID: 255138500}
-  minValue: 0
-  maxValue: 0.1
 --- !u!114 &1631243025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4741,6 +4725,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631243022}
   m_CullTransparentMesh: 1
+--- !u!114 &1631243027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631243022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5da28c424fd4908ab3e83f40cf5145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: d0cdf9c7e048c4f979020e5b39eb8ea4, type: 2}
+  propertyName: _WindAmplitude
+  slider: {fileID: 255138500}
+  minValue: 0
+  maxValue: 0.2
 --- !u!1 &1634544906
 GameObject:
   m_ObjectHideFlags: 0
